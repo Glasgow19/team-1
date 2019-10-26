@@ -5,6 +5,9 @@ session_start();
 // initializing variables
 $username = "";
 $email    = "";
+$gender    = "";
+$age    = "";
+$location   = "";
 $errors = array();
 
 // connect to the database
@@ -13,8 +16,11 @@ $db = connect();
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
     // receive all input values from the form
-    $username = mysqli_real_escape_string($db, $_POST['username']);
+    $username = mysqli_real_escape_string($db, $_POST['email']);
     $email = mysqli_real_escape_string($db, $_POST['email']);
+    $gender = mysqli_real_escape_string($db, $_POST['gender']);
+    $age = mysqli_real_escape_string($db, $_POST['age']);
+    $location = mysqli_real_escape_string($db, $_POST['location']);
     $password_1 = mysqli_real_escape_string($db, $_POST['password_1']);
     $password_2 = mysqli_real_escape_string($db, $_POST['password_2']);
 
@@ -40,15 +46,15 @@ if (isset($_POST['reg_user'])) {
 
     // Finally, register user if there are no errors in the form
     if (count($errors) == 0) {
-        $password = md5($password_1);//encrypt the password before saving in the database
-        echo $username;
-        $query = "INSERT INTO users (user_name, password) 
-  			  VALUES('$username', '$password')";
+        //$password = md5($password_1);//encrypt the password before saving in the database
+
+        $query = "INSERT INTO users (email_address, password, age, gender, location ) 
+  			  VALUES('$username', '$password', '$age', '$gender', '$location')";
         mysqli_query($db, $query);
         $_SESSION['username'] = $username;
         $_SESSION['success'] = "You are now logged in";
-        echo $query;
-        //header('location: index.php');
+
+        header('location: pages/profile.php');
     }
 }
 
@@ -66,7 +72,7 @@ if (isset($_POST['login_user'])) {
 
     if (count($errors) == 0) {
         //$password = md5($password);
-        $query = "SELECT * FROM users WHERE user_name='$username' AND password='$password'";
+        $query = "SELECT * FROM users WHERE email_address='$username' AND password='$password'";
         $results = mysqli_query($db, $query);
         if (mysqli_num_rows($results) == 1) {
             $_SESSION['username'] = $username;

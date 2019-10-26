@@ -13,12 +13,20 @@
 <form method="post" action="register.php">
     <?php include('php functions/errors.php'); ?>
     <div class="input-group">
-        <label>Username</label>
-        <input type="text" name="username" value="<?php echo $username; ?>">
-    </div>
-    <div class="input-group">
         <label>Email</label>
         <input type="email" name="email" value="<?php echo $email; ?>">
+    </div>
+    <div class="input-group">
+        <label>Gender</label>
+        <input type="text" name="gender" value="<?php echo $gender; ?>">
+    </div>
+    <div class="input-group">
+        <label>Age</label>
+        <input type="text" name="age" value="<?php echo $age; ?>">
+    </div>
+    <div class="input-group">
+        <label>Location</label>
+        <input type="text" name="location" value="<?php echo $location; ?>">
     </div>
     <div class="input-group">
         <label>Password</label>
