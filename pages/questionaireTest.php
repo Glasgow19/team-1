@@ -100,10 +100,10 @@
 <form id="regForm" action="/action_page.php">
     <!-- One "tab" for each step in the form: -->
     <div class="tab">
-        <h2>Look in the mirror, how good do you look?</h2>
-        <iframe src="https://giphy.com/embed/8vt8BQ69pp9TZVECwV" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/laff-tv-laff-lafftv-tv-8vt8BQ69pp9TZVECwV"></a></p>
-        <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-        <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+        <h1>Look in the mirror, how good do you look?</h1>
+        <iframe src="https://giphy.com/embed/8vt8BQ69pp9TZVECwV" style="position: relative" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/laff-tv-laff-lafftv-tv-8vt8BQ69pp9TZVECwV"></a></p>
+        <!-- <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+        <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p> -->
         <input type="checkbox" name='option1' id="option1"/><label for="option1"></label>
         <input type="checkbox" name='option2' id="option2"/><label for="option2"></label>
         <input type="checkbox" name='option3' id="option3"/><label for="option3"></label>
@@ -112,14 +112,51 @@
     </div>
     <div class="tab">
         <h1>Does your Workplace provide a gym or other discounts at a local alternative?</h1>
-        <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
-        <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+        <input type="checkbox" name='option1' id="option1"/><label for="option1"></label>
+        <input type="checkbox" name='option2' id="option2"/><label for="option2"></label>
+        <input type="checkbox" name='option3' id="option3"/><label for="option3"></label>
+        <input type="checkbox" name='option4' id="option4"/><label for="option4"></label>
+        <input type="checkbox" name='option5' id="option5"/><label for="option5"></label>
     </div>
     <div class="tab">
         <h1>How out of breathe do you feel after running up a flight of stairs?</h1>
-        <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
-        <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
-        <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
+        <input type="checkbox" name='option1' id="option1"/><label for="option1"></label>
+        <input type="checkbox" name='option2' id="option2"/><label for="option2"></label>
+        <input type="checkbox" name='option3' id="option3"/><label for="option3"></label>
+        <input type="checkbox" name='option4' id="option4"/><label for="option4"></label>
+        <input type="checkbox" name='option5' id="option5"/><label for="option5"></label>
+    </div>
+    <div class="tab">
+        <h1>Would you enjoy having a walking/hill walking community in your area?</h1>
+        <input type="checkbox" name='option1' id="option1"/><label for="option1"></label>
+        <input type="checkbox" name='option2' id="option2"/><label for="option2"></label>
+        <input type="checkbox" name='option3' id="option3"/><label for="option3"></label>
+        <input type="checkbox" name='option4' id="option4"/><label for="option4"></label>
+        <input type="checkbox" name='option5' id="option5"/><label for="option5"></label>
+    </div>
+    <div class="tab">
+        <h1>Can you do 15-20 push-ups without breaking a sweat?</h1>
+        <input type="checkbox" name='option1' id="option1"/><label for="option1"></label>
+        <input type="checkbox" name='option2' id="option2"/><label for="option2"></label>
+        <input type="checkbox" name='option3' id="option3"/><label for="option3"></label>
+        <input type="checkbox" name='option4' id="option4"/><label for="option4"></label>
+        <input type="checkbox" name='option5' id="option5"/><label for="option5"></label>
+    </div>
+    <div class="tab">
+        <h1>How out of breathe do you feel after running up a flight of stairs?</h1>
+        <input type="checkbox" name='option1' id="option1"/><label for="option1"></label>
+        <input type="checkbox" name='option2' id="option2"/><label for="option2"></label>
+        <input type="checkbox" name='option3' id="option3"/><label for="option3"></label>
+        <input type="checkbox" name='option4' id="option4"/><label for="option4"></label>
+        <input type="checkbox" name='option5' id="option5"/><label for="option5"></label>
+    </div>
+    <div class="tab">
+        <h1>How out of breathe do you feel after running up a flight of stairs?</h1>
+        <input type="checkbox" name='option1' id="option1"/><label for="option1"></label>
+        <input type="checkbox" name='option2' id="option2"/><label for="option2"></label>
+        <input type="checkbox" name='option3' id="option3"/><label for="option3"></label>
+        <input type="checkbox" name='option4' id="option4"/><label for="option4"></label>
+        <input type="checkbox" name='option5' id="option5"/><label for="option5"></label>
     </div>
     <div class="tab">Login Info:
         <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
@@ -133,6 +170,10 @@
     </div>
     <!-- Circles which indicates the steps of the form: -->
     <div style="text-align:center;margin-top:40px;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
         <span class="step"></span>
         <span class="step"></span>
         <span class="step"></span>
