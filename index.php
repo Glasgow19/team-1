@@ -121,6 +121,7 @@
             </div>
             <!--Body-->
             <div class="modal-body mx-4">
+                
                 <!--Body-->
                 <div class="md-form mb-5">
                     <input type="email" id="Form-email1" class="form-control validate">
@@ -148,6 +149,7 @@
                     <!--Google +-->
                     <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fab fa-google-plus-g"></i></button>
                 </div>
+
             </div>
             <!--Footer-->
             <div class="modal-footer mx-5 pt-3 mb-1">
