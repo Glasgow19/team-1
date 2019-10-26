@@ -122,20 +122,21 @@
             </div>
             <!--Body-->
             <div class="modal-body mx-4">
-                    <form method="post" action="login.php">
+                    <form class="navbar-form" method="post" action="login.php">
                         <?php include('php functions/errors.php'); ?>
-                        <div class="input-group">
-                            <label>Username</label>
-                            <input type="text" name="username" >
+                        <div class="form-group">
+                            <label>Username   </label><br>
+                            <input class="form-control mr-2" type="text" name="username" >
                         </div>
-                        <div class="input-group">
-                            <label>Password</label>
-                            <input type="password" name="password">
+                        <br>
+                        <div class="form-group">
+                            <label>Password   </label><br>
+                            <input class="form-control mr-2" type="password" name="password">
+                        </div><br>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-outline-success buy-btn my-2 my-sm-0 mr-2" name="login_user">Login</button>
                         </div>
-                        <div class="input-group">
-                            <button type="submit" class="btn" name="login_user">Login</button>
-                        </div>
-                        <p>
+                        <p> <br>
                             Not yet a member? <a href="register.php">Sign up</a>
                         </p>
                     </form>
