@@ -30,7 +30,7 @@ CREATE TABLE `location` (
   `opportunity` varchar(100) DEFAULT NULL,
   `physical_competence` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,6 +39,7 @@ CREATE TABLE `location` (
 
 LOCK TABLES `location` WRITE;
 /*!40000 ALTER TABLE `location` DISABLE KEYS */;
+INSERT INTO `location` VALUES (1,'Glasgow and West','4','10','9','6'),(2,'Tayside and Central','2','4','6','4'),(3,'Edinburgh, Fife and East','7','9','10','7'),(4,'Highlands and Islands','7','5','3','5'),(5,'NE, Orkney and Shetland','2','6','3','4');
 /*!40000 ALTER TABLE `location` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-10-26 17:39:08
+-- Dump completed on 2019-10-26 19:06:22
