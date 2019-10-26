@@ -126,7 +126,12 @@ a.custom-card:hover {
 #id3, #id4 {
     display: none;
 }
-
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
