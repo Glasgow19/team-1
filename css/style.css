@@ -1,6 +1,6 @@
 :root {
-    --accent: #2badb6;
-    --shadow-accent: #2badb6;
+    --accent: #e59552;
+    --shadow-accent: #e59552;
 }
 
 body {
@@ -13,7 +13,9 @@ body {
         padding-top: 56px;
     }
 }
-
+.bg-dark {
+    background-color: #2badb6!important;
+}
 .header {
     height: 50vh;
     min-height: 480px;
@@ -30,6 +32,7 @@ body {
 
 .navbar {
     white-space: nowrap;
+
 
 }
 
@@ -151,6 +154,7 @@ html, body{
     padding:0;
 
 }
+
 
 .place {
     min-height: 100%;
