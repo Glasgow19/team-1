@@ -125,24 +125,27 @@
             </div>
             <!--Body-->
             <div class="modal-body mx-4">
-                    <form class="navbar-form" method="post" action="login.php">
-                        <?php include('php functions/errors.php'); ?>
-                        <div class="form-group">
-                            <label>Username   </label><br>
-                            <input class="form-control mr-2" type="text" name="username" >
-                        </div>
-                        <br>
-                        <div class="form-group">
-                            <label>Password   </label><br>
-                            <input class="form-control mr-2" type="password" name="password">
-                        </div><br>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-outline-success buy-btn my-2 my-sm-0 mr-2" name="login_user">Login</button>
-                        </div>
-                        <p> <br>
-                            Not yet a member? <a href="register.php">Sign up</a>
-                        </p>
-                    </form>
+                <form class="navbar-form" method="post" action="login.php">
+                    <?php include('php functions/errors.php'); ?>
+                    <div class="form-group">
+                        <label>Username   </label><br>
+                        <input class="form-control mr-2" type="text" name="username" >
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label>Password   </label><br>
+                        <input class="form-control mr-2" type="password" name="password">
+                    </div><br>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-outline-success buy-btn my-2 my-sm-0 mr-2" name="login_user">Login</button>
+                    </div>
+                    <p> <br>
+                        Not yet a member? <a href="register.php"></a>
+                        <a class="btn btn-outline-success login-btn my-2 my-sm-0 mr-2 buy-btn text-white" data-toggle="modal" data-target="#elegantModalsignupForm" role="button">Sign up</a>
+
+
+                    </p>
+                </form>
             </div>
             <!--Footer-->
             <div class="modal-footer mx-5 pt-3 mb-1">
@@ -154,6 +157,89 @@
     </div>
 </div>
 <!-- Modal -->
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="elegantModalsignupForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <!--Content-->
+        <div class="modal-content form-elegant">
+            <!--Header-->
+            <div class="modal-header text-center">
+                <h3 class="modal-title w-100 dark-grey-text font-weight-bold " id="myModalLabel"><strong>Register</strong></h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body mx-4">
+                <form class="navbar-form" method="post" action="register.php">
+                    <?php include('php functions/errors.php'); ?>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input class="form-control mr-2" type="email" name="email" value="<?php echo $email; ?>">
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <input  class="form-control mr-2" type="text" name="gender" value="<?php echo $gender; ?>">
+                    </div>
+                    <div class="form-group">
+                        <label>Age</label>
+                        <input class="form-control mr-2" type="text" name="age" value="<?php echo $age; ?>">
+                    </div>
+                    <div class="form-group">
+                        <label>Location</label>
+                        <input class="form-control mr-2" type="text" name="location" value="<?php echo $location; ?>">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input class="form-control mr-2" type="password" name="password_1">
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm password</label>
+                        <input class="form-control mr-2" type="password" name="password_2">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-outline-success login-btn my-2 my-sm-0 mr-2 buy-btn text-white" type="submit" class="btn" name="reg_user">Register</button>
+                    </div>
+                    <p>
+                        Already a member? <a href="login.php"></a>
+                        <a class="btn btn-outline-success login-btn my-2 my-sm-0 mr-2 buy-btn text-white" data-toggle="modal" data-target="#elegantModalForm" role="button">Sign in</a>
+
+
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
