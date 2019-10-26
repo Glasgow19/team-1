@@ -1,6 +1,6 @@
 :root {
-    --accent: #005eb8;
-    --shadow-accent: #005eb8;
+    --accent: #2badb6;
+    --shadow-accent: #2badb6;
 }
 
 body {
@@ -122,11 +122,6 @@ a.custom-card:hover {
 
 #id3, #id4 {
     display: none;
-}
-
-.nhsColor {
-    color: #005eb8;
-
 }
 
 #myBtn {
