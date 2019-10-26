@@ -1,3 +1,4 @@
+<?php include('php functions/login_register.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -121,35 +122,23 @@
             </div>
             <!--Body-->
             <div class="modal-body mx-4">
-                
-                <!--Body-->
-                <div class="md-form mb-5">
-                    <input type="email" id="Form-email1" class="form-control validate">
-                    <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
-                </div>
-
-                <div class="md-form pb-3">
-                    <input type="password" id="Form-pass1" class="form-control validate">
-                    <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
-                    <p class="font-small blue-text d-flex justify-content-end">Forgot <a href="#" class="blue-text ml-1">
-                            Password?</a></p>
-                </div>
-
-                <div class="text-center mb-3">
-                    <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Sign in</button>
-                </div>
-                <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in
-                    with:</p>
-
-                <div class="row my-3 d-flex justify-content-center">
-                    <!--Facebook-->
-                    <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-facebook-f text-center"></i></button>
-                    <!--Twitter-->
-                    <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-twitter"></i></button>
-                    <!--Google +-->
-                    <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fab fa-google-plus-g"></i></button>
-                </div>
-
+                    <form method="post" action="login.php">
+                        <?php include('php functions/errors.php'); ?>
+                        <div class="input-group">
+                            <label>Username</label>
+                            <input type="text" name="username" >
+                        </div>
+                        <div class="input-group">
+                            <label>Password</label>
+                            <input type="password" name="password">
+                        </div>
+                        <div class="input-group">
+                            <button type="submit" class="btn" name="login_user">Login</button>
+                        </div>
+                        <p>
+                            Not yet a member? <a href="register.php">Sign up</a>
+                        </p>
+                    </form>
             </div>
             <!--Footer-->
             <div class="modal-footer mx-5 pt-3 mb-1">
