@@ -105,7 +105,7 @@
 
 <!-- Page Content -->
 <!-- --------------------------------------------------------------------- -->
-
+<img src="./Assets/openmoji-svg-color/1F602.svg" alt="LMAO">
 
 
 <!-- Footer -->
