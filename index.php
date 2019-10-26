@@ -54,6 +54,9 @@
                 <a class="nav-link" href="contact-us.php">Contact Us</a>
             </li>
         </ul>
+        <div class="text-center">
+            <a class="btn btn-outline-success login-btn my-2 my-sm-0 mr-2 buy-btn text-white" data-toggle="modal" data-target="#elegantModalForm" role="button">Log In</a>
+        </div>
         <form class="navbar-form form-inline" action="login.php" method="POST">
             <div id="id3" class="form-group">
                 <input readonly="true" id="id3.1" class="form-control mr-2" type="text" placeholder="Username"
@@ -152,9 +155,7 @@
 </div>
 <!-- Modal -->
 
-<div class="text-center">
-    <a class="btn btn-primary" data-toggle="modal" data-target="#elegantModalForm" role="button">Log In</a>
-</div>
+
 
 
 
