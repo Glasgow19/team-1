@@ -85,7 +85,7 @@ $oppertunity = $user['oppertunity'];
                 <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="about.php">About Us</a>
+                <a class="nav-link" href="about1.php">About Us</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="faq.php">FAQs</a>
