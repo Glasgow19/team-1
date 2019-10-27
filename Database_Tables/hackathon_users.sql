@@ -27,8 +27,17 @@ CREATE TABLE `users` (
   `user_name` varchar(45) DEFAULT NULL,
   `password` varchar(45) DEFAULT NULL,
   `email_address` varchar(255) DEFAULT NULL,
+  `firstname` varchar(255) DEFAULT NULL,
+  `surname` varchar(255) DEFAULT NULL,
+  `age` int(11) DEFAULT NULL,
+  `gender` varchar(255) DEFAULT NULL,
+  `location` varchar(255) DEFAULT NULL,
+  `motivation` int(11) DEFAULT NULL,
+  `confidence` int(11) DEFAULT NULL,
+  `oppertunity` int(11) DEFAULT NULL,
+  `physical_competence` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +46,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'john','pass','john@john.com'),(2,'juri','',''),(3,'test','test','test');
+INSERT INTO `users` VALUES (1,'john','pass','john@john.com','John','Parsons',21,'Male','Edinburgh, Fife and East',7,5,8,8),(2,'juri','','','Juri','Ilmjarv',21,'Male','Glasgow and West',5,8,7,6),(3,'test','test','test','Test','Tester',30,'Female','NE, Orkney and Shetland',7,6,6,6),(4,'yo','','yo@yo.com','Yousef','Hollister',65,'Male','Tayside and Central',4,3,5,3),(5,'zohaib','',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(6,NULL,'','yo@yo.com',NULL,NULL,22,'male','here',NULL,NULL,NULL,NULL),(7,NULL,'','yo@yo.com',NULL,NULL,22,'male','here',NULL,NULL,NULL,NULL),(8,NULL,'','yo@yo.com',NULL,NULL,22,'male','here',NULL,NULL,NULL,NULL),(9,NULL,'','yo@yo.com',NULL,NULL,22,'male','here',NULL,NULL,NULL,NULL),(10,NULL,'','yo2@yo.com',NULL,NULL,2,'male','here also',NULL,NULL,NULL,NULL),(11,NULL,'','yo2@yo.com',NULL,NULL,2,'male','here also',NULL,NULL,NULL,NULL),(12,NULL,'','testbyz@email.com',NULL,NULL,55,'male','glasgow',NULL,NULL,NULL,NULL),(13,NULL,'','testtslnl@fjnf.com',NULL,NULL,87,'kjhghj','khsdikhsh',NULL,NULL,NULL,NULL),(14,NULL,'','x@x.com',NULL,NULL,1,'m','1',NULL,NULL,NULL,NULL),(15,NULL,'1','y@y.com',NULL,NULL,1,'male','there',NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +59,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-10-26 19:06:22
+-- Dump completed on 2019-10-27  5:31:36

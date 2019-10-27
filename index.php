@@ -45,13 +45,13 @@
                 <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="about.php">About Us</a>
+                <a class="nav-link" href="pages/about.php">About Us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="faq.php">FAQs</a>
+                <a class="nav-link" href="pages/faq.php">FAQs</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact-us.php">Contact Us</a>
+                <a class="nav-link" href="pages/contact-us.php">Contact Us</a>
             </li>
         </ul>
         <div class="text-center">
@@ -210,6 +210,7 @@
 </div>
 
 
+
 <div class="container">
     <!-- Example row of columns -->
     <div class="row">
@@ -234,6 +235,27 @@
 
 <h2>Lots of opportunities near you:</h2>
 <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=glasgow%2C%20gym&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/ipvanish-coupon/"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div>
+<br>
+<h1 class="text-center"> Our Partners</h1>
+
+
+<div class="container">
+    <div class="row">
+
+
+        <div class="column">
+
+            <div class="column pull-right"><br><img src="resources/logo1.jpg" alt=""/></div>
+        </div>
+        <div class="column">
+            <div class="column pull-left"><br><img src="resources/logo.jpg" alt=""/></div>
+
+        </div>
+    </div>
+</div>
+<br>
+
+
 <!-- Footer -->
 <footer class="py-3 bg-dark">
     <div class="container">

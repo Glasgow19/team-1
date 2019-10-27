@@ -126,6 +126,7 @@
     <div class="tab">
         <div class="container text-center">
             <h1>How out of breathe do you feel after running up a flight of stairs?</h1>
+            <iframe src="https://giphy.com/embed/5YaOmKEtpaNUoavY0m" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/globaltv-big-brother-canada-bbcan-bbcan7-5YaOmKEtpaNUoavY0m"></a></p>
             <input type="checkbox" name='option11' id="option11"/><label for="option11"></label>
             <input type="checkbox" name='option12' id="option12"/><label for="option12"></label>
             <input type="checkbox" name='option13' id="option13"/><label for="option13"></label>
@@ -136,6 +137,7 @@
     <div class="tab">
         <div class="container text-center">
             <h1>Would you enjoy having a walking/hill walking community in your area?</h1>
+            <iframe src="https://giphy.com/embed/l2JejjpFLUt5MxZLi" width="480" height="366" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/season-3-the-simpsons-3x23-l2JejjpFLUt5MxZLi"></a></p>
             <input type="checkbox" name='option16' id="option16"/><label for="option16"></label>
             <input type="checkbox" name='option17' id="option17"/><label for="option17"></label>
             <input type="checkbox" name='option18' id="option18"/><label for="option18"></label>
@@ -146,6 +148,7 @@
     <div class="tab">
         <div class="container text-center">
             <h1>Can you do 15-20 push-ups without breaking a sweat?</h1>
+            <iframe src="https://giphy.com/embed/OLY40BwPRUWic" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/monkey-OLY40BwPRUWic"></a></p>
             <input type="checkbox" name='option21' id="option21"/><label for="option21"></label>
             <input type="checkbox" name='option22' id="option22"/><label for="option22"></label>
             <input type="checkbox" name='option23' id="option23"/><label for="option23"></label>
@@ -155,7 +158,8 @@
     </div>
     <div class="tab">
         <div class="container text-center">
-            <h1>How out of breathe do you feel after running up a flight of stairs?</h1>
+            <h1>You’re feeling thirsty, how likely are you to get up to get a drink?</h1>
+            <iframe src="https://giphy.com/embed/d7neV59KdL9geEWtyC" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/anemmyformegan-d7neV59KdL9geEWtyC"></a></p>
             <input type="checkbox" name='option26' id="option26"/><label for="option26"></label>
             <input type="checkbox" name='option27' id="option27"/><label for="option27"></label>
             <input type="checkbox" name='option28' id="option28"/><label for="option28"></label>
@@ -165,12 +169,24 @@
     </div>
     <div class="tab">
         <div class="container text-center">
-            <h1>How out of breathe do you feel after running up a flight of stairs?</h1>
+            <h1>A tv program comes on and the remote is at the other side of the room. Watch it as something new might be good? Get up immediately as you know what you like? </h1>
+            <iframe src="https://giphy.com/embed/3pZiiGZ4ZH7YDytOfH" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/bublywater-ad-lazy-3pZiiGZ4ZH7YDytOfH"></a></p>
             <input type="checkbox" name='option31' id="option31"/><label for="option31"></label>
             <input type="checkbox" name='option32' id="option32"/><label for="option32"></label>
             <input type="checkbox" name='option33' id="option33"/><label for="option33"></label>
             <input type="checkbox" name='option34' id="option34"/><label for="option34"></label>
             <input type="checkbox" name='option35' id="option35"/><label for="option35"></label>
+        </div>
+    </div>
+    <div class="tab">
+        <div class="container text-center">
+            <h1>You get picked to be on stage. How likely are you to steal the spotlight? </h1>
+            <iframe src="https://giphy.com/embed/3o7Zetm0RureMk6gzS" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fuckthatsdelicious-viceland-fuck-thats-delicious-3o7Zetm0RureMk6gzS"></a></p>
+            <input type="checkbox" name='option36' id="option36"/><label for="option36"></label>
+            <input type="checkbox" name='option37' id="option37"/><label for="option37"></label>
+            <input type="checkbox" name='option38' id="option38"/><label for="option38"></label>
+            <input type="checkbox" name='option39' id="option39"/><label for="option39"></label>
+            <input type="checkbox" name='option40' id="option40"/><label for="option40"></label>
         </div>
     </div>
     <div style="overflow:auto;">
