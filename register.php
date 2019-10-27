@@ -1,4 +1,4 @@
-<?php include('php functions/login_register.php') ?>
+<?php include('php_functions/login_register.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +11,7 @@
 </div>
 
 <form method="post" action="register.php">
-    <?php include('php functions/errors.php'); ?>
+    <?php include('php_functions/errors.php'); ?>
     <div class="input-group">
         <label>Email</label>
         <input type="email" name="email" value="<?php echo $email; ?>">

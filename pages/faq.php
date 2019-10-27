@@ -1,4 +1,4 @@
-<?php include('../php functions/login_register.php') ?>
+<?php include('../php_functions/login_register.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,7 +45,7 @@
                 <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="about1.php">About Us</a>
+                <a class="nav-link" href="about.php">About Us</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="faq.php">FAQs</a>

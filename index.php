@@ -1,4 +1,4 @@
-<?php include('php functions/login_register.php') ?>
+<?php include('php_functions/login_register.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -120,7 +120,7 @@
             <!--Body-->
             <div class="modal-body mx-4">
                 <form class="navbar-form" method="post" action="login.php">
-                    <?php include('php functions/errors.php'); ?>
+                    <?php include('php_functions/errors.php'); ?>
                     <div class="form-group">
                         <label>Username   </label><br>
                         <input class="form-control mr-2" type="text" name="username" >
@@ -169,7 +169,7 @@
             <!--Body-->
             <div class="modal-body mx-4">
                 <form class="navbar-form" method="post" action="register.php">
-                    <?php include('php functions/errors.php'); ?>
+                    <?php include('php_functions/errors.php'); ?>
                     <div class="form-group">
                         <label>Email</label>
                         <input class="form-control mr-2" type="email" name="email" value="<?php echo $email; ?>">
