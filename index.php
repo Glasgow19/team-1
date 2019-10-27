@@ -92,9 +92,9 @@
 <!-- Header with Background Image -->
 <div class="text-center header">
     <div class="col-md-5 p-lg-5 mx-auto my-5">
-        <h1 class="display-4 font-weight-normal">Punny headline</h1>
-        <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
-        <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+        <h1 class="display-4 font-weight-normal">Explore the Possibility</h1>
+        <p class="lead font-weight-normal text-light">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
+        <a class="btn buy-btn btn-outline-secondary" href="pages/questionaireTest.php">Explore Now</a>
     </div>
     <div class="product-device box-shadow d-none d-md-block"></div>
     <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
@@ -218,7 +218,7 @@
             <span style="font-size: 120px;">
               <i class="fas fa-building"></i>
             </span>
-            <h2>Heading</h2>
+            <h2>About Us</h2>
             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
         </div>
         <div class="col-md-2"></div>
@@ -226,15 +226,12 @@
              <span style="font-size: 120px;">
                 <i class="fas fa-info-circle"></i>
             </span>
-            <h2>Heading</h2>
+            <h2>How It Works</h2>
             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
         </div>
     </div>
 </div>
-
-
-<h2>Lots of opportunities near you:</h2>
-<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=glasgow%2C%20gym&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/ipvanish-coupon/"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div>
+<hr>
 <br>
 <h1 class="text-center"> Our Partners</h1>
 
@@ -253,7 +250,12 @@
         </div>
     </div>
 </div>
+<hr>
 <br>
+
+<h1 class="text-center">Lots of opportunities near you</h1> <br>
+<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=glasgow%2C%20gym&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/ipvanish-coupon/"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div>
+
 
 
 <!-- Footer -->
