@@ -94,7 +94,7 @@
     <div class="col-md-5 p-lg-5 mx-auto my-5">
         <h1 class="display-4 font-weight-normal">Explore the Possibility</h1>
         <p class="lead font-weight-normal text-light">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
-        <a class="btn buy-btn btn-outline-secondary" href="pages/questionaireTest.php">Explore Now</a>
+        <a class="btn btn-outline-success login-btn my-2 my-sm-0 mr-2 buy-btn text-white" data-toggle="modal" data-target="#elegantModalsignupForm" role="button">Explore Now</a>
     </div>
     <div class="product-device box-shadow d-none d-md-block"></div>
     <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
@@ -119,7 +119,7 @@
             </div>
             <!--Body-->
             <div class="modal-body mx-4">
-                <form class="navbar-form" method="post" action="login.php">
+                <form class="navbar-form" method="post" action="index.php">
                     <?php include('php_functions/errors.php'); ?>
                     <div class="form-group">
                         <label>Username   </label><br>

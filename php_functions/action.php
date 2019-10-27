@@ -44,7 +44,7 @@ echo $physical_competence.' ';
 $user_check_query = "UPDATE users SET motivation='$motivation', confidence='$confidence', oppertunity='$oppertunity', physical_competence='$physical_competence' WHERE id=1";
 $result = mysqli_query($db, $user_check_query);
 
-header('location: ../pages/profile.php');
+header('location: ../pages/questionaireTest.php');
 
 
 //extract question number from array key

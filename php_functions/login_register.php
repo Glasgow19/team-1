@@ -54,7 +54,7 @@ if (isset($_POST['reg_user'])) {
         $_SESSION['username'] = $username;
         $_SESSION['success'] = "You are now logged in";
 
-        header('location: pages/profile.php');
+        header('location: pages/questionaireTest.php');
     }
 }
 
