@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="Team 1">
 
-    <title> Actify</title>
+    <title>Quizivity</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -31,9 +31,9 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#"><i class="fas fa-running"
+    <a class="navbar-brand" href="#"><i class="fas fa-comments"
                                         title="Logo"></i>
-        Company Name Here</a>
+        Quizivity</a>
     <button class="navbar-toggler my-1" type="button" data-toggle="collapse" data-target="#navbarResponsive"
             aria-controls="navbarResponsive"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -251,7 +251,7 @@
 <!-- Footer -->
 <footer class="py-3 bg-dark">
     <div class="container">
-        <p class="m-0 text-center text-white">&copy; Company Name Here 2019</p>
+        <p class="m-0 text-center text-white">&copy; Quizivity 2019</p>
     </div>
     <!-- /.container -->
 </footer>
