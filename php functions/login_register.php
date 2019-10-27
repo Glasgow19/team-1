@@ -1,5 +1,5 @@
 <?php
-include('php functions/db_connection.php');
+include('db_connection.php');
 session_start();
 
 // initializing variables
