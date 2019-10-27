@@ -249,6 +249,27 @@ fa-facebook"></i> Share with your friends</a>
 
     <br>
 
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">Recommendations based on your score</h4>
+        </div>
+        <div class="card-body">
+
+                <div class="row">
+                    <div class="col-md-3 pr-1">
+                        <a href="https://www.actify.org.uk/result/confidence" title="Confidence" target="_blank" class="btn buy-btn">Confidence</a>
+        </div>
+                    <div class="col-md-3 pr-1">
+                        <a href="https://www.actify.org.uk/result/physical" title="Motivation" target="_blank" class="btn buy-btn">Motivation</a>
+                    </div>
+    </div>
+</div>
+    </div>
+</div>
+
+    <br>
+
 
 
 <!-- Footer -->
