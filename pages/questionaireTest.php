@@ -3,101 +3,180 @@
 ?>
 
 <!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<html lang="en">
 
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous">
-<!-- Font Awesome CSS -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous">
-<link href="../css/style.css" rel="stylesheet">
-<style>
-    * {
-        box-sizing: border-box;
-    }
+<head>
 
-    body {
-        background-color: #f1f1f1;
-    }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Team 1">
 
-    #regForm {
-        background-color: #ffffff;
-        margin: 100px auto;
-        font-family: Raleway;
-        padding: 40px;
-        width: 70%;
-        min-width: 300px;
-    }
+    <title>Quizivity</title>
 
-    h1 {
-        text-align: center;
-    }
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+          crossorigin="anonymous">
 
-    input {
-        padding: 10px;
-        width: 100%;
-        font-size: 17px;
-        font-family: Raleway;
-        border: 1px solid #aaaaaa;
-    }
+    <!-- Custom CSS -->
+    <link href="../css/style.css" rel="stylesheet">
 
-    /* Mark input boxes that gets an error on validation: */
-    input.invalid {
-        background-color: #ffdddd;
-    }
+    <script src="https://d3js.org/d3.v5.js"></script>
 
-    /* Hide all steps by default: */
-    .tab {
-        display: none;
-    }
 
-    button {
-        background-color: #4CAF50;
-        color: #ffffff;
-        border: none;
-        padding: 10px 20px;
-        font-size: 17px;
-        font-family: Raleway;
-        cursor: pointer;
-    }
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    button:hover {
-        opacity: 0.8;
-    }
+        body {
+            background-color: #f1f1f1;
+        }
 
-    #prevBtn {
-        background-color: #bbbbbb;
-    }
+        #regForm {
+            background-color: #ffffff;
+            margin: 100px auto;
+            font-family: Raleway;
+            padding: 40px;
+            width: 70%;
+            min-width: 300px;
+        }
 
-    /* Make circles that indicate the steps of the form: */
-    .step {
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbbbbb;
-        border: none;
-        border-radius: 50%;
-        display: inline-block;
-        opacity: 0.5;
-    }
+        h1 {
+            text-align: center;
+        }
 
-    .step.active {
-        opacity: 1;
-    }
+        input {
+            padding: 10px;
+            width: 100%;
+            font-size: 17px;
+            font-family: Raleway;
+            border: 1px solid #aaaaaa;
+        }
 
-    /* Mark the steps that are finished and valid: */
-    .step.finish {
-        background-color: #4CAF50;
-    }
+        /* Mark input boxes that gets an error on validation: */
+        input.invalid {
+            background-color: #ffdddd;
+        }
+
+        /* Hide all steps by default: */
+        .tab {
+            display: none;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 17px;
+            font-family: Raleway;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        #prevBtn {
+            background-color: #bbbbbb;
+        }
+
+        /* Make circles that indicate the steps of the form: */
+        .step {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbbbbb;
+            border: none;
+            border-radius: 50%;
+            display: inline-block;
+            opacity: 0.5;
+        }
+
+        .step.active {
+            opacity: 1;
+        }
+
+        /* Mark the steps that are finished and valid: */
+        .step.finish {
+            background-color: #4CAF50;
+        }
+
+
+        </head>
 </style>
 <body>
 
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#"><i class="fas fa-comments"
+                                        title="Logo"></i>
+        Quizivity</a>
+    <button class="navbar-toggler my-1" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.php">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.php">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="faq.php">FAQs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact-us.php">Contact Us</a>
+            </li>
+        </ul>
+        <div class="text-center">
+            <a class="btn btn-outline-success login-btn my-2 my-sm-0 mr-2 buy-btn text-white" data-toggle="modal" data-target="#elegantModalForm" role="button">Log In</a>
+        </div>
+        <form class="navbar-form form-inline" action="login.php" method="POST">
+            <div id="id3" class="form-group">
+                <input readonly="true" id="id3.1" class="form-control mr-2" type="text" placeholder="Username"
+                       name="userName" required aria-label="Enter your username">
+                <input readonly="true" id="id3.2" class="form-control mr-2" type="password" placeholder="Password"
+                       name="uncrypPass" required aria-label="Enter your Password">
+                <input class="form-control" type="hidden" name="remember" value="checked">
+                <button class="btn btn-outline-success login-btn my-2 my-sm-0 mr-2" type="submit">Log In</button>
+                <button class="btn btn-outline-success login-btn my-2 my-sm-0 mr-2" type="register"
+                        onclick="location.href='register.php';">Register
+                </button>
+            </div>
+        </form>
+        <div id="id4" class="logout">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link account" href="dashboard.php">
+
+                        Account</a>
+                </li>
+                <li class="nav-item">
+                    <form action="login.php" method="POST">
+                        <input type='hidden' name="logout" value="true">
+                        <button class="btn btn-outline-success login-btn my-2 my-sm-0 mr-2" type="submit">Logout
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
 <form method="GET" id="regForm" action="../php_functions/action.php">
+
     <!-- One "tab" for each step in the form: -->
     <div class="tab">
         <div class="container text-center">
@@ -286,7 +365,28 @@
     }
 
 </script>
+<!-- Footer -->
+<footer class="py-3 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">&copy; Quizivity 2019</p>
+    </div>
+    <!-- /.container -->
+</footer>
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
 
+</html>
 </body>
 </html>
+
+
 
