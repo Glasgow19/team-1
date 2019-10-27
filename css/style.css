@@ -220,7 +220,8 @@ input#option11[type=checkbox] + label,
 input#option16[type=checkbox] + label,
 input#option21[type=checkbox] + label,
 input#option26[type=checkbox] + label,
-input#option31[type=checkbox] + label
+input#option31[type=checkbox] + label,
+input#option36[type=checkbox] + label
 {
     background-image: url("../Assets/openmoji-svg-color/1F621.svg");
     border-color: white;
@@ -236,7 +237,8 @@ input#option11[type=checkbox] + label,
 input#option16[type=checkbox] + label,
 input#option21[type=checkbox] + label,
 input#option26[type=checkbox] + label,
-input#option31[type=checkbox] + label
+input#option31[type=checkbox] + label,
+input#option37[type=checkbox] + label
 {
     background-image: url("../Assets/openmoji-svg-color/1F621.svg");
     border-color: white;
@@ -252,7 +254,8 @@ input#option12[type=checkbox] + label,
 input#option17[type=checkbox] + label,
 input#option22[type=checkbox] + label,
 input#option27[type=checkbox] + label,
-input#option32[type=checkbox] + label
+input#option32[type=checkbox] + label,
+input#option37[type=checkbox] + label
 {
     background-image: url("../Assets/openmoji-svg-color/1F641.svg");
     border-color: white;
@@ -268,7 +271,8 @@ input#option13[type=checkbox] + label,
 input#option18[type=checkbox] + label,
 input#option23[type=checkbox] + label,
 input#option28[type=checkbox] + label,
-input#option33[type=checkbox] + label
+input#option33[type=checkbox] + label,
+input#option38[type=checkbox] + label
 {
     background-image: url("../Assets/openmoji-svg-color/1F610.svg");
     border-color: white;
@@ -284,7 +288,8 @@ input#option14[type=checkbox] + label,
 input#option19[type=checkbox] + label,
 input#option24[type=checkbox] + label,
 input#option29[type=checkbox] + label,
-input#option34[type=checkbox] + label
+input#option34[type=checkbox] + label,
+input#option39[type=checkbox] + label
 {
     background-image: url("../Assets/openmoji-svg-color/1F642.svg");
     border-color: white;
@@ -300,7 +305,8 @@ input#option15[type=checkbox] + label,
 input#option20[type=checkbox] + label,
 input#option25[type=checkbox] + label,
 input#option30[type=checkbox] + label,
-input#option35[type=checkbox] + label
+input#option35[type=checkbox] + label,
+input#option40[type=checkbox] + label
 {
     background-image: url("../Assets/openmoji-svg-color/1F604.svg");
     border-color: white;
@@ -346,7 +352,12 @@ input#option31[type=checkbox]:checked + label,
 input#option32[type=checkbox]:checked + label,
 input#option33[type=checkbox]:checked + label,
 input#option34[type=checkbox]:checked + label,
-input#option35[type=checkbox]:checked + label
+input#option35[type=checkbox]:checked + label,
+input#option36[type=checkbox]:checked + label,
+input#option37[type=checkbox]:checked + label,
+input#option38[type=checkbox]:checked + label,
+input#option39[type=checkbox]:checked + label,
+input#option40[type=checkbox]:checked + label
 {
     border-color: red;
     border-style: solid;
