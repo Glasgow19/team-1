@@ -357,6 +357,7 @@ input#option35[type=checkbox]:checked + label
 }
 
 
+
 .column {
     float: left;
     width: 50%;
@@ -398,3 +399,9 @@ h1{
 .place h1{
     padding-top: 80px;
 }
+
+.inner {
+    display: block;
+    margin: auto;
+}
+
