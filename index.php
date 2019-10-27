@@ -217,35 +217,25 @@
 </div>
 
 
+<br>
+<h1 class="text-center"> Our Partners</h1>
 
 
+<div class="container">
+    <div class="row">
 
 
+        <div class="column">
 
+            <div class="column pull-right"><br><img src="resources/logo1.jpg" alt=""/></div>
+        </div>
+        <div class="column">
+            <div class="column pull-left"><br><img src="resources/logo.jpg" alt=""/></div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img src="./Assets/openmoji-svg-color/1F602.svg" alt="LMAO">
+        </div>
+    </div>
+</div>
+<br>
 
 
 <!-- Footer -->
