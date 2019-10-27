@@ -355,3 +355,8 @@ input#option35[type=checkbox]:checked + label
     display:inline-block;
     padding: 0 0 0 0px;
 }
+
+.inner {
+    display: block;
+    margin: auto;
+}
