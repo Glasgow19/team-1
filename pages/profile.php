@@ -1,3 +1,34 @@
+<?php
+include('../php functions/db_connection.php');
+
+// connect to the database
+$db = connect();
+
+$email = '';
+$age = '';
+$gender = '';
+$location = '';
+$motivation = '';
+$confidence = '';
+$oppertunity = '';
+$physical_competence = '';
+$username = 'john@john.com';
+
+$user_check_query = "SELECT * FROM users WHERE email_address='$username' LIMIT 1";
+$result = mysqli_query($db, $user_check_query);
+$user = mysqli_fetch_assoc($result);
+
+$email = $user['email_address'];
+$age = $user['age'];
+$gender = $user['gender'];
+$location = $user['location'];
+$motivation = $user['motivation'];
+$confidence = $user['confidence'];
+$physical_competence = $user['physical_competence'];
+$oppertunity = $user['oppertunity'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -145,28 +176,8 @@
 
                                         <div class="col-md-6 pr-1">
                                             <div class="form-group">
-                                                <label>Username</label>
-                                                <input type="text" class="form-control" placeholder="Username" value="michael23">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 pr-1">
-                                            <div class="form-group">
                                                 <label for="exampleInputEmail1">Email address</label>
-                                                <input type="email" class="form-control" placeholder="Email" value="dummy@email.com">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6 pr-1">
-                                            <div class="form-group">
-                                                <label>First Name</label>
-                                                <input type="text" class="form-control" placeholder="First Name" value="Mike">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 pr-1">
-                                            <div class="form-group">
-                                                <label>Last Name</label>
-                                                <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
+                                                <input type="email" class="form-control" placeholder="Email" value="<?php echo $email;?>">
                                             </div>
                                         </div>
                                     </div>
@@ -174,19 +185,13 @@
                                         <div class="col-md-4 pr-1">
                                             <div class="form-group">
                                                 <label>City</label>
-                                                <input type="text" class="form-control" placeholder="City" value="Glasgow">
+                                                <input type="text" class="form-control" placeholder="City" value="<?php echo $location;?>">
                                             </div>
                                         </div>
-                                        <div class="col-md-4 px-1">
+                                        <div class="col-md-4 pr-1">
                                             <div class="form-group">
                                                 <label>Age</label>
-                                                <input type="text" class="form-control" placeholder="Age" value="22">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 pl-1">
-                                            <div class="form-group">
-                                                <label>Postal Code</label>
-                                                <input type="text" class="form-control" placeholder="ZIP Code" value="G11 1AB">
+                                                <input type="text" class="form-control" placeholder="Age" value="<?php echo $age?>">
                                             </div>
                                         </div>
                                     </div>
@@ -210,10 +215,10 @@
                                 <div class="author">
                                     <a href="#">
                                         <img class="border-gray center" src="../resources/default-avatar.png" alt="...">
-                                        <h5 class="title text-center">Mike Andrew</h5>
+                                        <h5 class="title text-center">You</h5>
                                     </a>
                                     <p class="description text-center">
-                                        michael24
+                                        <?php echo $email ?>
                                     </p>
                                 </div>
                                 <p class="description text-center">
@@ -283,7 +288,7 @@
             labels: ['Physical Competency', 'Confidence', 'Motivation', 'Opportunity'],
             datasets: [{
                 label: 'You',
-                data: [7, 6, 8, 5],
+                data: [<?php echo (int)$physical_competence; ?>, <?php echo (int)$confidence; ?>, <?php echo (int)$motivation; ?>, <?php echo (int)$oppertunity; ?>],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -303,8 +308,8 @@
                 borderWidth: 1
             },
                 {
-                    label: 'Your Area Avg',
-                    data: [8, 7, 5, 6],
+                    label: 'Area in Avg',
+                    data: [6, 5, 5, 6],
                     backgroundColor: [
                         'rgba(0, 0, 255, 0.2)',
                         'rgba(54, 162, 235, 0.2)',
