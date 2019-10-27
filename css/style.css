@@ -355,3 +355,46 @@ input#option35[type=checkbox]:checked + label
     display:inline-block;
     padding: 0 0 0 0px;
 }
+
+
+.column {
+    float: left;
+    width: 50%;
+    padding-right: 3%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+h1{
+    color: #2badb6;
+}
+
+#id3, #id4 {
+    display: none;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.place {
+    min-height: 40%;
+    background: url("../resources/aboutbg.jpg") center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.place h1{
+    padding-top: 80px;
+}

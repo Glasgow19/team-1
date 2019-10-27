@@ -45,13 +45,13 @@
                 <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="about.php">About Us</a>
+                <a class="nav-link" href="pages/about.php">About Us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="faq.php">FAQs</a>
+                <a class="nav-link" href="pages/faq.php">FAQs</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact-us.php">Contact Us</a>
+                <a class="nav-link" href="pages/contact-us.php">Contact Us</a>
             </li>
         </ul>
         <div class="text-center">
