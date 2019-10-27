@@ -90,21 +90,15 @@
 </nav>
 
 <!-- Header with Background Image -->
-<header class="header" role="banner">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="float-lg-left text-center">
-                    <br><br>
-                    <h1 class="mt-5">Some text here</h1>
-                </div>
-            </div>
-        </div>
+<div class="text-center header">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 font-weight-normal">Punny headline</h1>
+        <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
+        <a class="btn btn-outline-secondary" href="#">Coming soon</a>
     </div>
-
-
-</header>
+    <div class="product-device box-shadow d-none d-md-block"></div>
+    <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+</div>
 
 
 <!-- Page Content -->
@@ -157,7 +151,6 @@
     </div>
 </div>
 <!-- Modal -->
-
 
 
 <!-- Modal -->
@@ -217,6 +210,31 @@
 </div>
 
 
+
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-5 text-center">
+            <span style="font-size: 120px;">
+              <i class="fas fa-building"></i>
+            </span>
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5 text-center">
+             <span style="font-size: 120px;">
+                <i class="fas fa-info-circle"></i>
+            </span>
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        </div>
+    </div>
+</div>
+
+
+<h2>Lots of opportunities near you:</h2>
+<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=glasgow%2C%20gym&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/ipvanish-coupon/"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div>
 <br>
 <h1 class="text-center"> Our Partners</h1>
 
