@@ -283,7 +283,7 @@
             labels: ['Physical Competency', 'Confidence', 'Motivation', 'Opportunity'],
             datasets: [{
                 label: 'You',
-                data: [12, 19, 3, 5],
+                data: [7, 6, 8, 5],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -304,7 +304,7 @@
             },
                 {
                     label: 'Your Area Avg',
-                    data: [5, 9, 13, 3],
+                    data: [8, 7, 5, 6],
                     backgroundColor: [
                         'rgba(0, 0, 255, 0.2)',
                         'rgba(54, 162, 235, 0.2)',
