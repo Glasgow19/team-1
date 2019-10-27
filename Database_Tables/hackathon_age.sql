@@ -29,6 +29,7 @@ CREATE TABLE `age` (
   `confidence` varchar(100) DEFAULT NULL,
   `opportunity` varchar(100) DEFAULT NULL,
   `physical_competence` varchar(100) DEFAULT NULL,
+  `Total_Avg_Age` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -39,7 +40,7 @@ CREATE TABLE `age` (
 
 LOCK TABLES `age` WRITE;
 /*!40000 ALTER TABLE `age` DISABLE KEYS */;
-INSERT INTO `age` VALUES (1,'18-24','3','8','7','9'),(2,'25-34','7','5','5','7'),(3,'35-44','6','3','5','7'),(4,'45-54','5','6','4','6'),(5,'55-64','5','4','4','4'),(6,'65-74','3','3','2','2'),(7,'75 or Greater','2','3','1','1');
+INSERT INTO `age` VALUES (1,'18-24','3','8','7','9',7),(2,'25-34','7','5','5','7',6),(3,'35-44','6','3','5','7',5),(4,'45-54','5','6','4','6',5),(5,'55-64','5','4','4','4',4),(6,'65-74','3','3','2','2',3),(7,'75 or Greater','2','3','1','1',2);
 /*!40000 ALTER TABLE `age` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-10-26 19:06:21
+-- Dump completed on 2019-10-27  5:31:34
