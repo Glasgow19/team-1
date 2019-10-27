@@ -1,4 +1,4 @@
-<?php include('../php functions/login_register.php') ?>
+<?php include('../php_functions/login_register.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 

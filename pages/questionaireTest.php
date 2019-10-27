@@ -97,7 +97,7 @@
 </style>
 <body>
 
-<form id="regForm" action="/action.php">
+<form method="GET" id="regForm" action="../php_functions/action.php">
     <!-- One "tab" for each step in the form: -->
     <div class="tab">
         <div class="container text-center">
@@ -204,6 +204,8 @@
         <span class="step"></span>
         <span class="step"></span>
         <span class="step"></span>
+        <span class="step"></span>
+
 
     </div>
 </form>
@@ -224,6 +226,7 @@
         }
         if (n == (x.length - 1)) {
             document.getElementById("nextBtn").innerHTML = "Submit";
+            document.getElementById("nextBtn").setAttribute("type", "submit");
         } else {
             document.getElementById("nextBtn").innerHTML = "Next";
         }
