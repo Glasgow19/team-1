@@ -208,3 +208,104 @@ html, body{
 
 .form-elegant .modal-body, .form-elegant .modal-footer {
     font-weight: 400; }
+
+
+input[type=checkbox] {
+    display:none;
+}
+
+input#option1[type=checkbox] + label
+{
+    background-image: url("../Assets/openmoji-svg-color/1F621.svg");
+    border-color: white;
+    border-style: solid;
+    height: 100px;
+    width: 100px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+input#option2[type=checkbox] + label
+{
+    background-image: url("../Assets/openmoji-svg-color/1F641.svg");
+    border-color: white;
+    border-style: solid;
+    height: 100px;
+    width: 100px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+input#option3[type=checkbox] + label
+{
+    background-image: url("../Assets/openmoji-svg-color/1F610.svg");
+    border-color: white;
+    border-style: solid;
+    height: 100px;
+    width: 100px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+input#option4[type=checkbox] + label
+{
+    background-image: url("../Assets/openmoji-svg-color/1F642.svg");
+    border-color: white;
+    border-style: solid;
+    height: 100px;
+    width: 100px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+input#option5[type=checkbox] + label
+{
+    background-image: url("../Assets/openmoji-svg-color/1F604.svg");
+    border-color: white;
+    border-style: solid;
+    height: 100px;
+    width: 100px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+input#option1[type=checkbox]:checked + label
+{
+    border-color: red;
+    border-style: solid;
+    height: 100px;
+    width: 100px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+input#option2[type=checkbox]:checked + label
+{
+    border-color: red;
+    border-style: solid;
+    height: 100px;
+    width: 100px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+input#option3[type=checkbox]:checked + label
+{
+    border-color: red;
+    border-style: solid;
+    height: 100px;
+    width: 100px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+input#option4[type=checkbox]:checked + label
+{
+    border-color: red;
+    border-style: solid;
+    height: 100px;
+    width: 100px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+input#option5[type=checkbox]:checked + label
+{
+    border-color: red;
+    border-style: solid;
+    height: 100px;
+    width: 100px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}

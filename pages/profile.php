@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <title> Actify</title>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
           crossorigin="anonymous">
+
 
     <!-- Custom CSS -->
     <link href="../css/style.css" rel="stylesheet">
@@ -130,6 +131,8 @@
 
         <div class="content">
             <div class="container-fluid">
+                <div class="container-fluid">
+                    <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-8">
                         <div class="card">
@@ -149,7 +152,7 @@
                                         <div class="col-md-6 pr-1">
                                             <div class="form-group">
                                                 <label for="exampleInputEmail1">Email address</label>
-                                                <input type="email" class="form-control" placeholder="Email">
+                                                <input type="email" class="form-control" placeholder="Email" value="dummy@email.com">
                                             </div>
                                         </div>
                                     </div>
@@ -157,10 +160,10 @@
                                         <div class="col-md-6 pr-1">
                                             <div class="form-group">
                                                 <label>First Name</label>
-                                                <input type="text" class="form-control" placeholder="Company" value="Mike">
+                                                <input type="text" class="form-control" placeholder="First Name" value="Mike">
                                             </div>
                                         </div>
-                                        <div class="col-md-6 pl-1">
+                                        <div class="col-md-6 pr-1">
                                             <div class="form-group">
                                                 <label>Last Name</label>
                                                 <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
@@ -168,30 +171,22 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label>Address</label>
-                                                <input type="text" class="form-control" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
                                         <div class="col-md-4 pr-1">
                                             <div class="form-group">
                                                 <label>City</label>
-                                                <input type="text" class="form-control" placeholder="City" value="Mike">
+                                                <input type="text" class="form-control" placeholder="City" value="Glasgow">
                                             </div>
                                         </div>
                                         <div class="col-md-4 px-1">
                                             <div class="form-group">
-                                                <label>Country</label>
-                                                <input type="text" class="form-control" placeholder="Country" value="Andrew">
+                                                <label>Age</label>
+                                                <input type="text" class="form-control" placeholder="Age" value="22">
                                             </div>
                                         </div>
                                         <div class="col-md-4 pl-1">
                                             <div class="form-group">
                                                 <label>Postal Code</label>
-                                                <input type="text" class="form-control" placeholder="ZIP Code">
+                                                <input type="text" class="form-control" placeholder="ZIP Code" value="G11 1AB">
                                             </div>
                                         </div>
                                     </div>
@@ -225,15 +220,19 @@
                                     "Code 4 Good"
                                 </p>
                             </div>
-                            <hr>
+                            <canvas id="myChart" width="200" height="200"></canvas>
+
 
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+            </div>
+        </div>
     </div>
+    </div>
+
 
     <br>
 
@@ -259,6 +258,7 @@
 </body>
 
 <!--   Core JS Files   -->
+
 <script src="../assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
 <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
 <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
@@ -274,5 +274,69 @@
 <script src="../assets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
 <!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
 <script src="../assets/js/demo.js"></script>
+
+<script>
+    var ctx = document.getElementById('myChart');
+    var myRadarChart = new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: ['Physical Competency', 'Confidence', 'Motivation', 'Opportunity'],
+            datasets: [{
+                label: 'You',
+                data: [7, 6, 8, 5],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            },
+                {
+                    label: 'Your Area Avg',
+                    data: [8, 7, 5, 6],
+                    backgroundColor: [
+                        'rgba(0, 0, 255, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(0, 0, 255, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }
+
+
+            ]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+</script>
 
 </html>
