@@ -207,6 +207,9 @@ $oppertunity = $user['oppertunity'];
                                     <div class="clearfix"></div>
                                 </form>
                             </div>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=" title="Share on
+Facebook" target="_blank" class="btn buy-btn btn-facebook"><i class="fa
+fa-facebook"></i> Share with your friends</a>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -224,11 +227,14 @@ $oppertunity = $user['oppertunity'];
                                 <p class="description text-center">
                                     "Code 4 Good"
                                 </p>
+                                <script src="../js/print.js"></script>
+
                             </div>
+
 
                             <!-- place the graph-->
                             <canvas id="myChart" width="200" height="200"></canvas>
-
+                            <button class="btn buy-btn btn-primary hidden-print" onclick="myFunction()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print</button>
 
                         </div>
                     </div>
