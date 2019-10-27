@@ -225,6 +225,8 @@ $oppertunity = $user['oppertunity'];
                                     "Code 4 Good"
                                 </p>
                             </div>
+
+                            <!-- place the graph-->
                             <canvas id="myChart" width="200" height="200"></canvas>
 
 
@@ -279,6 +281,10 @@ $oppertunity = $user['oppertunity'];
 <script src="../assets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
 <!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
 <script src="../assets/js/demo.js"></script>
+
+
+<!-- Generates the radar graph -->
+
 
 <script>
     var ctx = document.getElementById('myChart');
